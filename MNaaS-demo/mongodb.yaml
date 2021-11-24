@@ -1,0 +1,29 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: mongodb
+  namespace: mnaas-demo
+spec:
+  selector:
+    matchLabels:
+      app: mongodb
+  template:
+    metadata:
+      labels:
+        app: mongodb
+    spec:
+      containers:
+      - name: mongodb
+        env:
+            - name: MONGODB_USER
+              value: 'admin'
+            - name: MONGODB_PASSWORD
+              value: 'admin'
+            - name: MONGODB_DATABASE
+              value: 'mongo'
+            - name: MONGODB_ADMIN_PASSWORD
+              value: 'admin'
+        image: registry.access.redhat.com/rhscl/mongodb-26-rhel7
+        imagePullPolicy: Always
+        ports:
+        - containerPort: 27017

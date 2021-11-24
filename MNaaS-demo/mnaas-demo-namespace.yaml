@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: Namespace
+metadata:
+  annotations:
+    openshift.io/description: mnaas-demo
+    openshift.io/display-name:  mnaas-demo
+  name: mnaas-demo
