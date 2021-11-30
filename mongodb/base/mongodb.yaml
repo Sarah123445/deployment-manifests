@@ -16,9 +16,15 @@ spec:
       - name: mongodb
         env:
             - name: MONGODB_USER
-              value: 'admin'
+              valueFrom: 
+                secretKeyRef:
+                  key: MONGODB_USER
+                  name: mongodb-secret
             - name: MONGODB_PASSWORD
-              value: 'admin'
+              valueFrom: 
+                secretKeyRef:
+                  key: MONGODB_PASSWORD
+                  name: mongodb-secret
             - name: MONGODB_DATABASE
               value: 'mongo'
             - name: MONGODB_ADMIN_PASSWORD
