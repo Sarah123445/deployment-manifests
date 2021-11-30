@@ -4,3 +4,4 @@ kind: Kustomization
 bases:
 - mongodb.yaml
 - mongodb-svc.yaml
+- mongodb-secret.yaml
