@@ -3,3 +3,4 @@ kind: Kustomization
 
 bases:
 - user-service.yaml
+- user-service-svc.yaml
