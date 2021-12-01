@@ -3,3 +3,6 @@ kind: Kustomization
 
 bases:
 - ../../base
+
+resources:
+- user-service-cm.yaml
