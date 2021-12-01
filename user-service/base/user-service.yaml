@@ -43,9 +43,15 @@ spec:
           name: user-service
           env:
             - name: MONGODB_USER
-              value: admin
+              valueFrom: 
+                secretKeyRef:
+                  key: MONGODB_USER
+                  name: mongodb-secret
             - name: MONGODB_PASSWORD
-              value: admin
+              valueFrom: 
+                secretKeyRef:
+                  key: MONGODB_PASSWORD
+                  name: mongodb-secret
           livenessProbe:
             httpGet:
               path: /actuator/health/liveness
