@@ -4,3 +4,4 @@ kind: Kustomization
 bases:
 - observability-demo.yaml
 - observability-demo-svc.yaml
+- observability-demo-route.yaml
