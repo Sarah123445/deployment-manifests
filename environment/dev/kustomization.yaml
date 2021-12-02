@@ -4,3 +4,4 @@ kind: Kustomization
 bases:
 - ../../mongodb/overlay/dev
 - ../../user-service/overlay/dev
+- ../../observability-demo/overlay/dev
