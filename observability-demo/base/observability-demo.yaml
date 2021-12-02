@@ -2,7 +2,7 @@ kind: Deployment
 apiVersion: apps/v1
 metadata:
   name: observability-demo
-  namespace: observability-demo
+  namespace: mnaas-demo
   labels:
     app: observability-demo
     logFormat: json
