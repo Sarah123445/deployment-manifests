@@ -2,7 +2,7 @@ kind: ConfigMap
 apiVersion: v1
 metadata:
   name: observability-demo
-  namespace: observability-demo
+  namespace: mnaas-demo
 data:
   application.properties: >-
     server.port=8080
