@@ -70,6 +70,6 @@ spec:
           envFrom:
             - configMapRef:
                 name: user-service
-          image: 'spencer94/user-service:latest'
+          image: 'spencer94/user-service:mdc-demo'
       restartPolicy: Always
       terminationGracePeriodSeconds: 30
