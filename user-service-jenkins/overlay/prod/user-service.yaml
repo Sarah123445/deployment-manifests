@@ -2,7 +2,7 @@ kind: Deployment
 apiVersion: apps/v1
 metadata:
   name: user-service-jenkins
-  namespace: mnaas-demo
+  namespace: mnaas-demo-prod
   labels:
     app: user-service-jenkins
     logFormat: json
@@ -70,6 +70,6 @@ spec:
           envFrom:
             - configMapRef:
                 name: user-service-jenkins
-          image: 'spencer94/user-service-jenkins:latest'
+          image: 'spencer94/user-service-jenkins:1.0.0'
       restartPolicy: Always
       terminationGracePeriodSeconds: 30

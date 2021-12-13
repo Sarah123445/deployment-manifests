@@ -1,0 +1,6 @@
+kind: Namespace
+apiVersion: v1
+metadata:
+  name: mnaas-demo-pre-prod
+  labels:
+    kubernetes.io/metadata.name: mnaas-demo-pre-prod
