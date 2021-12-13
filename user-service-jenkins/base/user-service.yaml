@@ -70,6 +70,6 @@ spec:
           envFrom:
             - configMapRef:
                 name: user-service-jenkins
-          image: 'spencer94/user-service-jenkins:latest'
+          image: 'spencer94/user-service-jenkins:1.0.0'
       restartPolicy: Always
       terminationGracePeriodSeconds: 30
