@@ -2,7 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: mongodb
-  namespace: mnaas-demo
+  namespace: iom-madhu
 spec:
   selector:
     matchLabels:

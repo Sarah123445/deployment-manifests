@@ -2,7 +2,7 @@ kind: Route
 apiVersion: route.openshift.io/v1
 metadata:
   name: observability-demo
-  namespace: mnaas-demo
+  namespace: iom-madhu
 spec:
   to:
     kind: Service

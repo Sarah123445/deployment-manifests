@@ -3,8 +3,6 @@ kind: Kustomization
 
 bases:
 - ../../base
-- ../pre-prod
-- ../prod
 
 resources:
 - user-service-cm.yaml

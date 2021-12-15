@@ -2,7 +2,7 @@ kind: Deployment
 apiVersion: apps/v1
 metadata:
   name: user-service
-  namespace: mnaas-demo
+  namespace: iom-madhu
   labels:
     app: user-service
     logFormat: json

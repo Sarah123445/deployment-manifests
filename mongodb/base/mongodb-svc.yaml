@@ -2,7 +2,7 @@ kind: Service
 apiVersion: v1
 metadata:
   name: mongodb-svc
-  namespace: mnaas-demo
+  namespace: iom-madhu
 spec:
   ports:
     - protocol: TCP
